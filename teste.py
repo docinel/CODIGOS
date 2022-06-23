@@ -1,7 +1,6 @@
-a=21
-b=42
-c=a+b
-print(c)
+from asyncio import wait_for
+import pyautogui as pyt
 
-r=input("qual o seu nome?")
-print(r)
+
+pyt.hotkey("win", "r")
+pyt.write("https://docs.google.com/spreadsheets/d/14x5Mep-8uO31VahOrhBd24ZslE6L_Bmk8IJU15WrazY/edit#gid=1196663743"), pyt.press("enter")
