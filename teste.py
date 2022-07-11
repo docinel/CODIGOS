@@ -4,8 +4,9 @@ import pyautogui as pyt
 
 pyt.PAUSE = 2
 
-pyt.hotkey("alt", "f2")
-#pyt.hotkey("win", "r")
+
+#pyt.hotkey("alt", "f2")
+pyt.hotkey("win", "r")
 time.sleep(5)
 pyt.write("https://docs.google.com/spreadsheets/d/14x5Mep-8uO31VahOrhBd24ZslE6L_Bmk8IJU15WrazY/edit#gid=1196663743")
 time.sleep(10)
