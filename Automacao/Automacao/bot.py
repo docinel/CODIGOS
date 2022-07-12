@@ -1,3 +1,4 @@
+import pyautogui as pyt
 """
 WARNING:
 
@@ -33,16 +34,83 @@ class Bot(DesktopBot):
         # activity_id = task.activity_id
 
         # Opens the BotCity website.
-        self.browse("http://www.botcity.dev")
-        if not self.find( "graf", matching=0.97, waiting_time=30000):
-            self.not_found("graf")
+        if not self.find( "mentor", matching=0.97, waiting_time=10000):
+            self.not_found("mentor")
         self.click()
-        if not self.find( "sant", matching=0.97, waiting_time=30000):
-            self.not_found("sant")
-        self.click_relative(335, 11)
-        if not self.find( "bsant", matching=0.97, waiting_time=30000):
-            self.not_found("bsant")
-        self.triple_click_relative(4,69)    
+
+        if not self.find( "inicio", matching=0.97, waiting_time=10000):
+            self.not_found("inicio")
+        self.click_relative(160, 25)
+        
+        self.paste("BI_264_RELATORIO")
+        self.enter(3000)
+        
+        if not self.find( "filtro", matching=0.97, waiting_time=10000):
+            self.not_found("filtro")
+        self.double_click()
+        
+        if not self.find( "juncao", matching=0.97, waiting_time=10000):
+            self.not_found("juncao")
+        self.double_click()
+        
+        if not self.find( "data_emissao", matching=0.97, waiting_time=10000):
+            self.not_found("data_emissao")
+        self.click()
+        
+        if not self.find( "data_2", matching=0.97, waiting_time=10000):
+            self.not_found("data_2")
+        self.click_relative(61, 23)
+        
+        self.paste("31/07/2022-00:00:00")
+        
+        self.enter(1000)
+        
+        if not self.find( "gerar_bi", matching=0.97, waiting_time=10000):
+            self.not_found("gerar_bi")
+        self.click()
+        
+        if not self.find( "select_A", matching=0.97, waiting_time=20000):
+            self.not_found("select_A")
+        self.click()
+        
+        if not self.find( "geral", matching=0.97, waiting_time=10000):
+            self.not_found("geral")
+        self.click()
+
+        self.paste("d"); self.enter(1000)
+
+        if not self.find( "select_A_2", matching=0.97, waiting_time=10000):
+           self.not_found("select_A_2")
+        self.click_relative(-8, 44)
+
+        # pyt.keyDown("ctrl")
+        # pyt.keyDown("shift")
+        # pyt.press("right")
+        
+        # pyt.keyUp("ctrl")
+        # pyt.keyUp("shift")
+
+        pyt.hotkey("ctrl","shift","right")
+
+
+        
+
+
+
+       
+       
+
+        
+        
+        
+        
+
+        
+
+        
+        
+
+
         
         
 
