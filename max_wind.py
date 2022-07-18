@@ -6,7 +6,11 @@ time.sleep(3)
 pag.hotkey("win","d")
 time.sleep(1)
 # texto = "business_inteligence"
-excel = gw.getWindowsWithTitle('business_inteligence')[0].maximize()
+gw.getWindowsWithTitle('Touch Comp ERP')[0].maximize()
+time.sleep(0.5)
+gw.getWindowsWithTitle('Touch Comp ERP')[0].minimize()
+time.sleep(2)
+gw.getWindowsWithTitle('business_inteligence')[0].maximize()
 # if texto in excel:
 #     print("Encontrado")
 # else:
