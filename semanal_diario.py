@@ -43,6 +43,12 @@ pyautogui.press("enter")
 # GERAR O RELATORIO
 pyautogui.click(x=598, y=202)
 time.sleep(20)
+pyautogui.getWindowsWithTitle('Touch Comp ERP')[0].maximize()
+time.sleep(0.5)
+pyautogui.getWindowsWithTitle('Touch Comp ERP')[0].minimize()
+time.sleep(2)
+pyautogui.getWindowsWithTitle('business_inteligence')[0].maximize()
+
 # SALVAR PLANILHA COMO
 pyautogui.hotkey("f12")
 pyautogui.click(x=586, y=55)
@@ -92,6 +98,11 @@ pyautogui.press("enter")
 # # GERAR O RELATORIO
 pyautogui.click(x=599, y=213)
 time.sleep(20)
+pyautogui.getWindowsWithTitle('Touch Comp ERP')[0].maximize()
+time.sleep(0.5)
+pyautogui.getWindowsWithTitle('Touch Comp ERP')[0].minimize()
+time.sleep(2)
+pyautogui.getWindowsWithTitle('business_inteligence')[0].maximize()
 
 # # SALVAR PLANILHA COMO
 pyautogui.hotkey("f12")
@@ -125,6 +136,11 @@ pyautogui.press("enter")
 # GERAR O RELATORIO
 pyautogui.click(x=596, y=211)
 time.sleep(20)
+pyautogui.getWindowsWithTitle('Touch Comp ERP')[0].maximize()
+time.sleep(0.5)
+pyautogui.getWindowsWithTitle('Touch Comp ERP')[0].minimize()
+time.sleep(2)
+pyautogui.getWindowsWithTitle('business_inteligence')[0].maximize()
 
 # SALVAR PLANILHA COMO
 pyautogui.hotkey("f12")
