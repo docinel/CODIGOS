@@ -6,7 +6,6 @@ import time
 Tempo_ini = time.time()
 pyautogui.PAUSE = 1.5
 
-
 # DETERMINANDO A DATA MENOS UM DIA
 data = datetime.today() - timedelta(days=1)
 data_hoje = (data.strftime('%d-%m-%Y' + '-00:00:00'))
@@ -18,7 +17,7 @@ pyautogui.write(r"C:\Mentor_PCP\start_mentor_SN.bat")
 pyautogui.press("enter")
 
 # Aguardar 60 segundos
-time.sleep(40)
+time.sleep(15)
 
 # CLICAR E ALTERAR O NOME E DIGITAR A SENHA
 pyautogui.click(x=612, y=430)
@@ -26,9 +25,10 @@ pyautogui.write("RODRIGOD")
 pyautogui.click(x=569, y=477)
 pyautogui.write("Rodr160D")
 pyautogui.press("enter")
-time.sleep(30)
+time.sleep(1)
 pyautogui.press("enter")
 
+time.sleep(50)
 
 # SELECIONAR O 253
 time.sleep(3)
@@ -46,11 +46,13 @@ pyautogui.press("tab")
 # GERAR O RELATORIO
 pyautogui.click(x=598, y=202)
 time.sleep(10)
+pyautogui.hotkey("win","d")
 pyautogui.getWindowsWithTitle('Touch Comp ERP')[0].maximize()
 time.sleep(0.5)
 pyautogui.getWindowsWithTitle('Touch Comp ERP')[0].minimize()
-time.sleep(2)
+time.sleep(0.5)
 pyautogui.getWindowsWithTitle('business_inteligence')[0].maximize()
+time.sleep(0.8)
 
 # SALVAR PLANILHA COMO
 pyautogui.hotkey("f12")
@@ -65,6 +67,7 @@ pyautogui.hotkey("alt", "f4")
 
 # FECHAR O MENTOR
 time.sleep(1.5)
+pyautogui.getWindowsWithTitle('Touch Comp ERP')[0].maximize()
 pyautogui.hotkey("alt", "f4")
 time.sleep(0.5)
 pyautogui.press("enter")
@@ -84,7 +87,8 @@ pyautogui.click(x=582, y=476)
 pyautogui.write("Rodr160D")
 pyautogui.click(x=656, y=572)
 pyautogui.press("enter")
-time.sleep(50)
+time.sleep(60)
+
 
 # # SELECIONAR O BI 102
 time.sleep(10)
@@ -102,13 +106,15 @@ pyautogui.press("tab")
 # # GERAR O RELATORIO
 pyautogui.click(x=599, y=213)
 time.sleep(10)
+pyautogui.hotkey("win","d")
 pyautogui.getWindowsWithTitle('Touch Comp ERP')[0].maximize()
 time.sleep(0.5)
 pyautogui.getWindowsWithTitle('Touch Comp ERP')[0].minimize()
-time.sleep(1.5)
+time.sleep(0.8)
 pyautogui.getWindowsWithTitle('business_inteligence')[0].maximize()
 
 # # SALVAR PLANILHA COMO
+time.sleep(0.6)
 pyautogui.hotkey("f12")
 pyautogui.click(x=586, y=55)
 pyautogui.write(r"Z:\005-FINANCEIRO\01-BI_FECH_DIARIO_MENSAL")
@@ -118,6 +124,8 @@ pyautogui.write("BASE_BI_102_NF_PROPRIA.xls")
 pyautogui.press("enter")
 pyautogui.press("s")
 pyautogui.hotkey("alt", "f4")
+time.sleep(0.6)
+pyautogui.getWindowsWithTitle('Touch Comp ERP')[0].maximize()
 pyautogui.click(x=76, y=102)
 pyautogui.click(x=186, y=50)
 
@@ -137,13 +145,15 @@ pyautogui.press("tab")
 # GERAR O RELATORIO
 pyautogui.click(x=596, y=211)
 time.sleep(10)
+pyautogui.hotkey("win","d")
 pyautogui.getWindowsWithTitle('Touch Comp ERP')[0].maximize()
-time.sleep(0.5)
+time.sleep(0.2)
 pyautogui.getWindowsWithTitle('Touch Comp ERP')[0].minimize()
-time.sleep(1.5)
+time.sleep(0.5)
 pyautogui.getWindowsWithTitle('business_inteligence')[0].maximize()
 
 # SALVAR PLANILHA COMO
+time.sleep(0.6)
 pyautogui.hotkey("f12")
 pyautogui.click(x=618, y=46)
 pyautogui.write(r"Z:\005-FINANCEIRO\01-BI_FECH_DIARIO_MENSAL")
@@ -156,6 +166,7 @@ pyautogui.hotkey("alt", "f4")
 
 # FECHAR O MENTOR
 time.sleep(1.5)
+pyautogui.getWindowsWithTitle('Touch Comp ERP')[0].maximize()
 pyautogui.hotkey("alt", "f4")
 time.sleep(0.5)
 pyautogui.press("enter")
@@ -164,25 +175,21 @@ pyautogui.press("enter")
 pyautogui.hotkey("win", "r")
 pyautogui.write(r"Z:\005-FINANCEIRO\01-BI_FECH_DIARIO_MENSAL\RELATORIO_DIARIO.xlsm")
 pyautogui.press("enter")
+time.sleep(1.3)
 pyautogui.click(x=652, y=168)
 time.sleep(25)
 pyautogui.click(x=292, y=239)
 pyautogui.press("enter")
 pyautogui.hotkey("alt", "f5")
-# pyautogui.press("s")
 
-# pyautogui.press("g")
-# pyautogui.press("z")
 pyautogui.click(x=160, y=472)
 pyautogui.hotkey("alt", "f5")
-# pyautogui.press("s")
-# pyautogui.press("g")
-# pyautogui.press("z")
 time.sleep(15)
 
 pyautogui.click(x=1010, y=234)
 time.sleep(4)
 pyautogui.hotkey("alt", "f4")
+
 pyautogui.hotkey("alt", "f4")
 pyautogui.press("l")
 
