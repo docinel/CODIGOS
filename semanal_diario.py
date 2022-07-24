@@ -4,7 +4,7 @@ import pyautogui
 import time
 
 Tempo_ini = time.time()
-pyautogui.PAUSE = 1.5
+pyautogui.PAUSE = 1.5       
 
 # DETERMINANDO A DATA MENOS UM DIA
 data = datetime.today() - timedelta(days=1)
