@@ -16,12 +16,15 @@ pyautogui.hotkey("win", "r")
 pyautogui.write(r"C:\Mentor_PCP\start_mentor_SN.bat")
 pyautogui.press("enter")
 
+time.sleep(10)
+pyautogui.getWindowsWithTitle('Login...')[0].restore()
 # Aguardar 60 segundos
 time.sleep(15)
 
 # CLICAR E ALTERAR O NOME E DIGITAR A SENHA
 pyautogui.click(x=612, y=430)
 pyautogui.write("RODRIGOD")
+
 pyautogui.click(x=569, y=477)
 pyautogui.write("Rodr160D")
 pyautogui.press("enter")
@@ -72,14 +75,20 @@ pyautogui.hotkey("alt", "f4")
 time.sleep(0.5)
 pyautogui.press("enter")
 
+
 # Abrir o Mentor FISCAL
 pyautogui.hotkey("win", "r")
 pyautogui.write(r"C:\Mentor_FISC\start_mentor_SN.bat")
 pyautogui.press("enter")
-#
+
+pyautogui.hotkey("win","d")
+time.sleep(10)
+pyautogui.getWindowsWithTitle('Login...')[0].restore()
+
+
 # # Aguardar 60 segundos
 time.sleep(7)
-#
+
 # CLICAR E ALTERAR O NOME E DIGITAR A SENHA
 pyautogui.click(x=664, y=433)
 pyautogui.write("RODRIGOD")
